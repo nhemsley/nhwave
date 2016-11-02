@@ -6,16 +6,16 @@ DEFAULT_SHELL := sh
 DEFAULT_CPP := cpp
 DEFAULT_FC := mpifort
 
-DEFAULT_HYPRE := /home-2/ncsa01/hyprelib_pgi153
+DEFAULT_HYPRE := /usr
 
-DEFAULT_CPPFLAGS += -P -C -traditional
+DEFAULT_CPPFLAGS += -P  -traditional
 
-DEFAULT_FFLAGS := -O1
-DEFAULT_FFLAGS_HOT := -fast
-DEFAULT_FFLAGS_ACC := -acc -Minfo=acc -fast
+DEFAULT_FFLAGS := -O1 -ffree-line-length-0
+DEFAULT_FFLAGS_HOT := -Ofast
+DEFAULT_FFLAGS_ACC := -Ofast
 DEFAULT_FFLAGS_HYPRE := -I$(DEFAULT_HYPRE)/include
 
-DEFAULT_LDFLAGS := -acc -fast
+DEFAULT_LDFLAGS := -Ofast #-Wl,--verbose
 DEFAULT_LIBS := -L$(DEFAULT_HYPRE)/lib -lHYPRE
 
 DEFAULT_BIN_NAME := nhwave
@@ -184,4 +184,3 @@ endif
 
 .SUFFIXES: .o .f90 .F
 .PHONY: all clean clean-config test
-
