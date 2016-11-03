@@ -80,7 +80,8 @@ SRC_MODS := mod_global.F mod_util.F mod_timing.F
 SRC_HOTSPOTS += hotspot_generate_coef_rhs.F
 SRC_HOTSPOTS += hotspot_hypre_pres_solver.F
 SRC_HOTSPOTS += hotspot_delxyzFun.F
-SRC_ORIG := $(SRC_MODS) $(SRC_HOTSPOTS) nhwave.F
+SRC_EXTRA := nspcg.F
+SRC_ORIG := $(SRC_MODS) $(SRC_HOTSPOTS) $(SRC_EXTRA) nhwave.F
 
 SRC := $(shell                                        \
          echo $(SRC_ORIG:.F=.f90) $(wildcard *.f90) | \
