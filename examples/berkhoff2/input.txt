@@ -10,7 +10,7 @@ RESULT_FOLDER = ./results/
 ! --------------------DIMENSION---------------------------------
 ! cell numbers
 Mglob = 1200
-Nglob = 1200
+Nglob = 400
 Kglob = 3
 
 ! --------------------PROCESSOR NUMBER-------------------------
@@ -20,7 +20,7 @@ PY = 4
 ! -----------------------TIME----------------------------------
 ! time: total computational time/ plot time / screen interval
 ! all in seconds
-SIM_STEPS = 100000
+SIM_STEPS = 1000000000
 TOTAL_TIME = 30.0
 PLOT_START = 0.0
 PLOT_INTV =  0.02
@@ -28,8 +28,8 @@ SCREEN_INTV = 0.02
 
 ! ------------------------GRID----------------------------------
 ! grid sizes
-DX = 0.25
-DY = 0.25
+DX = 0.025
+DY = 0.05
 
 ! ---------------------VERTICAL GRID OPTION--------------------
 ! IVGRD = 1: uniform; 2: exponential
@@ -165,9 +165,9 @@ BC_Zn = 1
 ! INT_SPC - internal wavemaker for 2D spectrum (need spc2d.txt)
 ! FLUX_LR - impose flux at both left and right boundaries
 WAVEMAKER = LEF_LIN
-AMP = 3.0
+AMP = 0.0864
 PER = 2.0
-DEP = 12.0
+DEP = 0.45
 THETA = 0.0
 
 ! ----------------------INTERNAL WAVEMAKER--------------------------------
