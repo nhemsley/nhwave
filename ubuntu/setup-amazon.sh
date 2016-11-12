@@ -1,3 +1,9 @@
+git clone https://github.com/nhemsley/nhwave.git
+
+cd nhwave
+git checkout ubuntu-16.10
+
+
 sudo apt-get install libhypre-dev libopenmpi-dev make
 
 
@@ -21,3 +27,4 @@ git clone https://github.com/wesleykendall/mpitutorial
 cd mpitutorial/tutorials/mpi-hello-world/code
 make
 ./mpi_hello_world
+
