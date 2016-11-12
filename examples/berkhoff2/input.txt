@@ -14,14 +14,14 @@ Nglob = 1200
 Kglob = 3
 
 ! --------------------PROCESSOR NUMBER-------------------------
-PX = 1
-PY = 1
+PX = 8
+PY = 4
 
 ! -----------------------TIME----------------------------------
 ! time: total computational time/ plot time / screen interval
 ! all in seconds
 SIM_STEPS = 100000
-TOTAL_TIME = 5.0
+TOTAL_TIME = 30.0
 PLOT_START = 0.0
 PLOT_INTV =  0.02
 SCREEN_INTV = 0.02
