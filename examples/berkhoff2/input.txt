@@ -10,7 +10,7 @@ RESULT_FOLDER = ./results/
 ! --------------------DIMENSION---------------------------------
 ! cell numbers
 Mglob = 1200
-Nglob = 400
+Nglob = 1200
 Kglob = 3
 
 ! --------------------PROCESSOR NUMBER-------------------------
